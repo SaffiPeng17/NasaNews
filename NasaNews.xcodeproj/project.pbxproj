@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04505437279FEA1D00F6894C /* UIImage+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04505436279FEA1D00F6894C /* UIImage+Util.swift */; };
 		0450543B279FF98D00F6894C /* NewsRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450543A279FF98D00F6894C /* NewsRequests.swift */; };
 		0450543D279FF9AF00F6894C /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450543C279FF9AF00F6894C /* NetworkErrors.swift */; };
 		0450543F279FF9F600F6894C /* NetworkConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450543E279FF9F600F6894C /* NetworkConfigs.swift */; };
@@ -20,8 +21,14 @@
 		0457A25C279DC32200CAF2F8 /* NasaNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457A25B279DC32200CAF2F8 /* NasaNewsUITests.swift */; };
 		0457A25E279DC32200CAF2F8 /* NasaNewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457A25D279DC32200CAF2F8 /* NasaNewsUITestsLaunchTests.swift */; };
 		0457A26D279DCC2C00CAF2F8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457A26C279DCC2C00CAF2F8 /* BaseViewController.swift */; };
+		0457A273279E6AFB00CAF2F8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457A272279E6AFB00CAF2F8 /* ListViewController.swift */; };
+		0457A275279E6B0700CAF2F8 /* ListViewControllerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457A274279E6B0700CAF2F8 /* ListViewControllerVM.swift */; };
+		0457A278279E71B800CAF2F8 /* ListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457A277279E71B800CAF2F8 /* ListItemCell.swift */; };
+		0457A27A279E71CB00CAF2F8 /* ListItemCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457A279279E71CB00CAF2F8 /* ListItemCellVM.swift */; };
+		0457A27C279E737100CAF2F8 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457A27B279E737100CAF2F8 /* BaseCollectionViewCell.swift */; };
 		04E674BF279EF80C0030D1F0 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E674BE279EF80C0030D1F0 /* NewsModel.swift */; };
 		04E674C4279F02610030D1F0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E674C3279F02610030D1F0 /* NetworkManager.swift */; };
+		04E674C7279F1F490030D1F0 /* UIImageView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E674C6279F1F490030D1F0 /* UIImageView+Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04505436279FEA1D00F6894C /* UIImage+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Util.swift"; sourceTree = "<group>"; };
 		0450543A279FF98D00F6894C /* NewsRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRequests.swift; sourceTree = "<group>"; };
 		0450543C279FF9AF00F6894C /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		0450543E279FF9F600F6894C /* NetworkConfigs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigs.swift; sourceTree = "<group>"; };
@@ -59,8 +67,14 @@
 		0457A25B279DC32200CAF2F8 /* NasaNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaNewsUITests.swift; sourceTree = "<group>"; };
 		0457A25D279DC32200CAF2F8 /* NasaNewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaNewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0457A26C279DCC2C00CAF2F8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0457A272279E6AFB00CAF2F8 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		0457A274279E6B0700CAF2F8 /* ListViewControllerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewControllerVM.swift; sourceTree = "<group>"; };
+		0457A277279E71B800CAF2F8 /* ListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemCell.swift; sourceTree = "<group>"; };
+		0457A279279E71CB00CAF2F8 /* ListItemCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemCellVM.swift; sourceTree = "<group>"; };
+		0457A27B279E737100CAF2F8 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		04E674BE279EF80C0030D1F0 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		04E674C3279F02610030D1F0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		04E674C6279F1F490030D1F0 /* UIImageView+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Util.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +143,7 @@
 			children = (
 				0457A23A279DC32000CAF2F8 /* AppDelegate.swift */,
 				0457A23C279DC32000CAF2F8 /* SceneDelegate.swift */,
+				04E674C5279F1F2A0030D1F0 /* Extensions */,
 				04E674BB279EF6540030D1F0 /* Network */,
 				0457A26A279DCBE300CAF2F8 /* CustomViews */,
 				0457A26F279DE9D200CAF2F8 /* ViewControllers */,
@@ -168,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				0457A26C279DCC2C00CAF2F8 /* BaseViewController.swift */,
+				0457A27B279E737100CAF2F8 /* BaseCollectionViewCell.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -176,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				0457A23E279DC32000CAF2F8 /* MainViewController.swift */,
+				0457A271279DEA0C00CAF2F8 /* ListView */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -189,6 +206,25 @@
 			path = StoryBoards;
 			sourceTree = "<group>";
 		};
+		0457A271279DEA0C00CAF2F8 /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				0457A276279E719300CAF2F8 /* Cells */,
+				0457A272279E6AFB00CAF2F8 /* ListViewController.swift */,
+				0457A274279E6B0700CAF2F8 /* ListViewControllerVM.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		0457A276279E719300CAF2F8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0457A277279E71B800CAF2F8 /* ListItemCell.swift */,
+				0457A279279E71CB00CAF2F8 /* ListItemCellVM.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		04E674BB279EF6540030D1F0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +235,15 @@
 				04505439279FF96D00F6894C /* Models */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		04E674C5279F1F2A0030D1F0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04E674C6279F1F490030D1F0 /* UIImageView+Util.swift */,
+				04505436279FEA1D00F6894C /* UIImage+Util.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,14 +377,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E674C7279F1F490030D1F0 /* UIImageView+Util.swift in Sources */,
 				0457A23F279DC32000CAF2F8 /* MainViewController.swift in Sources */,
 				0450543F279FF9F600F6894C /* NetworkConfigs.swift in Sources */,
 				0450543D279FF9AF00F6894C /* NetworkErrors.swift in Sources */,
+				0457A278279E71B800CAF2F8 /* ListItemCell.swift in Sources */,
+				0457A27C279E737100CAF2F8 /* BaseCollectionViewCell.swift in Sources */,
 				0450543B279FF98D00F6894C /* NewsRequests.swift in Sources */,
 				04E674C4279F02610030D1F0 /* NetworkManager.swift in Sources */,
 				0457A26D279DCC2C00CAF2F8 /* BaseViewController.swift in Sources */,
 				04E674BF279EF80C0030D1F0 /* NewsModel.swift in Sources */,
 				0457A23B279DC32000CAF2F8 /* AppDelegate.swift in Sources */,
+				0457A275279E6B0700CAF2F8 /* ListViewControllerVM.swift in Sources */,
+				04505437279FEA1D00F6894C /* UIImage+Util.swift in Sources */,
+				0457A27A279E71CB00CAF2F8 /* ListItemCellVM.swift in Sources */,
+				0457A273279E6AFB00CAF2F8 /* ListViewController.swift in Sources */,
 				0457A23D279DC32000CAF2F8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
