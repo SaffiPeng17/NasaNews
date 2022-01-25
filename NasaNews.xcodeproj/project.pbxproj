@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		0457A23B279DC32000CAF2F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457A23A279DC32000CAF2F8 /* AppDelegate.swift */; };
 		0457A23D279DC32000CAF2F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457A23C279DC32000CAF2F8 /* SceneDelegate.swift */; };
-		0457A23F279DC32000CAF2F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457A23E279DC32000CAF2F8 /* ViewController.swift */; };
+		0457A23F279DC32000CAF2F8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457A23E279DC32000CAF2F8 /* MainViewController.swift */; };
 		0457A242279DC32000CAF2F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0457A240279DC32000CAF2F8 /* Main.storyboard */; };
 		0457A244279DC32200CAF2F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0457A243279DC32200CAF2F8 /* Assets.xcassets */; };
 		0457A247279DC32200CAF2F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0457A245279DC32200CAF2F8 /* LaunchScreen.storyboard */; };
 		0457A252279DC32200CAF2F8 /* NasaNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457A251279DC32200CAF2F8 /* NasaNewsTests.swift */; };
 		0457A25C279DC32200CAF2F8 /* NasaNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457A25B279DC32200CAF2F8 /* NasaNewsUITests.swift */; };
 		0457A25E279DC32200CAF2F8 /* NasaNewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457A25D279DC32200CAF2F8 /* NasaNewsUITestsLaunchTests.swift */; };
+		0457A26D279DCC2C00CAF2F8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457A26C279DCC2C00CAF2F8 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,7 @@
 		0457A237279DC32000CAF2F8 /* NasaNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0457A23A279DC32000CAF2F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0457A23C279DC32000CAF2F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0457A23E279DC32000CAF2F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0457A23E279DC32000CAF2F8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0457A241279DC32000CAF2F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0457A243279DC32200CAF2F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0457A246279DC32200CAF2F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		0457A257279DC32200CAF2F8 /* NasaNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasaNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0457A25B279DC32200CAF2F8 /* NasaNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaNewsUITests.swift; sourceTree = "<group>"; };
 		0457A25D279DC32200CAF2F8 /* NasaNewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaNewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0457A26C279DCC2C00CAF2F8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +103,10 @@
 			children = (
 				0457A23A279DC32000CAF2F8 /* AppDelegate.swift */,
 				0457A23C279DC32000CAF2F8 /* SceneDelegate.swift */,
-				0457A23E279DC32000CAF2F8 /* ViewController.swift */,
-				0457A240279DC32000CAF2F8 /* Main.storyboard */,
+				0457A26A279DCBE300CAF2F8 /* CustomViews */,
+				0457A26F279DE9D200CAF2F8 /* ViewControllers */,
+				0457A270279DE9E100CAF2F8 /* StoryBoards */,
 				0457A243279DC32200CAF2F8 /* Assets.xcassets */,
-				0457A245279DC32200CAF2F8 /* LaunchScreen.storyboard */,
 				0457A248279DC32200CAF2F8 /* Info.plist */,
 			);
 			path = NasaNews;
@@ -125,6 +127,39 @@
 				0457A25D279DC32200CAF2F8 /* NasaNewsUITestsLaunchTests.swift */,
 			);
 			path = NasaNewsUITests;
+			sourceTree = "<group>";
+		};
+		0457A26A279DCBE300CAF2F8 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				0457A26B279DCBEC00CAF2F8 /* Base */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		0457A26B279DCBEC00CAF2F8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0457A26C279DCC2C00CAF2F8 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0457A26F279DE9D200CAF2F8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0457A23E279DC32000CAF2F8 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0457A270279DE9E100CAF2F8 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				0457A240279DC32000CAF2F8 /* Main.storyboard */,
+				0457A245279DC32200CAF2F8 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +293,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0457A23F279DC32000CAF2F8 /* ViewController.swift in Sources */,
+				0457A23F279DC32000CAF2F8 /* MainViewController.swift in Sources */,
+				0457A26D279DCC2C00CAF2F8 /* BaseViewController.swift in Sources */,
 				0457A23B279DC32000CAF2F8 /* AppDelegate.swift in Sources */,
 				0457A23D279DC32000CAF2F8 /* SceneDelegate.swift in Sources */,
 			);
