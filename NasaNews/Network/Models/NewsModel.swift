@@ -33,23 +33,4 @@ struct NewsModel: Codable {
         originalImageurl = try values.decode(String.self, forKey: .originalImageurl)
         copyright = try values.decode(String.self, forKey: .copyright)
     }
-
 }
-
-//struct NewsModel: Codable {
-//    let status: String
-//    let totalResults: Int
-//    let articles: [Article]
-//
-//    enum CodingKeys: String, CodingKey {
-//        case status, totalResults, articles
-//    }
-//
-//    init(from decoder: Decoder) throws {
-//        let values = try decoder.container(keyedBy: CodingKeys.self)
-//
-//        status = try values.decode(String.self, forKey: .status)
-//        totalResults = try values.decode(Int.self, forKey: .totalResults)
-//        articles = try values.decode([Article].self, forKey: .articles)
-//    }
-//}

@@ -10,6 +10,10 @@ import UIKit
 protocol ViewControllerSetupProtocol {
     func setupNavigationBar()
     func setupViews()
+    func updateViews()
+}
+extension ViewControllerSetupProtocol {
+    func updateViews() {}
 }
 
 public class BaseViewControllerVM {
@@ -22,6 +26,7 @@ public class BaseCoreViewController: UIViewController, ViewControllerSetupProtoc
     public override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+        updateViews()
     }
 
     public override func viewWillAppear(_ animated: Bool) {
@@ -45,6 +50,8 @@ public class BaseCoreViewController: UIViewController, ViewControllerSetupProtoc
     }
 
     func setupViews() {}
+
+    func updateViews() {}
 }
 
 public class BaseViewController<T: BaseViewControllerVM>: BaseCoreViewController {

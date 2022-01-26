@@ -11,6 +11,8 @@
 		0450543B279FF98D00F6894C /* NewsRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450543A279FF98D00F6894C /* NewsRequests.swift */; };
 		0450543D279FF9AF00F6894C /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450543C279FF9AF00F6894C /* NetworkErrors.swift */; };
 		0450543F279FF9F600F6894C /* NetworkConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450543E279FF9F600F6894C /* NetworkConfigs.swift */; };
+		0450544A27A00D5700F6894C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450544927A00D5700F6894C /* DetailViewController.swift */; };
+		0450544C27A00D6200F6894C /* DetailViewControllerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450544B27A00D6200F6894C /* DetailViewControllerVM.swift */; };
 		0457A23B279DC32000CAF2F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457A23A279DC32000CAF2F8 /* AppDelegate.swift */; };
 		0457A23D279DC32000CAF2F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457A23C279DC32000CAF2F8 /* SceneDelegate.swift */; };
 		0457A23F279DC32000CAF2F8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457A23E279DC32000CAF2F8 /* MainViewController.swift */; };
@@ -53,6 +55,8 @@
 		0450543A279FF98D00F6894C /* NewsRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRequests.swift; sourceTree = "<group>"; };
 		0450543C279FF9AF00F6894C /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		0450543E279FF9F600F6894C /* NetworkConfigs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigs.swift; sourceTree = "<group>"; };
+		0450544927A00D5700F6894C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0450544B27A00D6200F6894C /* DetailViewControllerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerVM.swift; sourceTree = "<group>"; };
 		0457A237279DC32000CAF2F8 /* NasaNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0457A23A279DC32000CAF2F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0457A23C279DC32000CAF2F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +120,15 @@
 				04E674BE279EF80C0030D1F0 /* NewsModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0450544827A00D3700F6894C /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				0450544927A00D5700F6894C /* DetailViewController.swift */,
+				0450544B27A00D6200F6894C /* DetailViewControllerVM.swift */,
+			);
+			path = DetailView;
 			sourceTree = "<group>";
 		};
 		0457A22E279DC32000CAF2F8 = {
@@ -193,6 +206,7 @@
 			children = (
 				0457A23E279DC32000CAF2F8 /* MainViewController.swift */,
 				0457A271279DEA0C00CAF2F8 /* ListView */,
+				0450544827A00D3700F6894C /* DetailView */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -378,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04E674C7279F1F490030D1F0 /* UIImageView+Util.swift in Sources */,
+				0450544A27A00D5700F6894C /* DetailViewController.swift in Sources */,
 				0457A23F279DC32000CAF2F8 /* MainViewController.swift in Sources */,
 				0450543F279FF9F600F6894C /* NetworkConfigs.swift in Sources */,
 				0450543D279FF9AF00F6894C /* NetworkErrors.swift in Sources */,
@@ -390,6 +405,7 @@
 				0457A23B279DC32000CAF2F8 /* AppDelegate.swift in Sources */,
 				0457A275279E6B0700CAF2F8 /* ListViewControllerVM.swift in Sources */,
 				04505437279FEA1D00F6894C /* UIImage+Util.swift in Sources */,
+				0450544C27A00D6200F6894C /* DetailViewControllerVM.swift in Sources */,
 				0457A27A279E71CB00CAF2F8 /* ListItemCellVM.swift in Sources */,
 				0457A273279E6AFB00CAF2F8 /* ListViewController.swift in Sources */,
 				0457A23D279DC32000CAF2F8 /* SceneDelegate.swift in Sources */,

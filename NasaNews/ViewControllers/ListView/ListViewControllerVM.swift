@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class ListViewControllerVM: BaseViewControllerVM {
 
@@ -14,6 +15,14 @@ class ListViewControllerVM: BaseViewControllerVM {
     init(data: [NewsModel]) {
         self.newsModels = data
         super.init()
+    }
+
+    func getDetailVC(at indexPath: IndexPath) -> UIViewController? {
+        guard let newsModel = cellVMForItem(at: indexPath) else {
+            return nil
+        }
+        let detailVM = DetailViewControllerVM(data: newsModel)
+        return DetailViewController(with: detailVM)
     }
 }
 

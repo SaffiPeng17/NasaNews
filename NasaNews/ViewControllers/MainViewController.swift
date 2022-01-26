@@ -11,7 +11,7 @@ class MainViewController: BaseCoreViewController {
 
     private lazy var lblTitle: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 17)
+        label.font = .systemFont(ofSize: 20)
         label.textAlignment = .center
         label.text = "Astronomy Picture of the Day"
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -20,7 +20,7 @@ class MainViewController: BaseCoreViewController {
 
     private lazy var requestButton: UIButton = {
         let button = UIButton()
-        button.titleLabel?.font = .systemFont(ofSize: 15)
+        button.titleLabel?.font = .systemFont(ofSize: 20)
         button.setTitle("request", for: .normal)
         button.setTitleColor(.blue, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -65,7 +65,7 @@ private extension MainViewController {
         let views = ["label": lblTitle, "button": requestButton]
 
         let descTitleH = "H:[label]"
-        let descButtonH = "H:[button(60)]"
+        let descButtonH = "H:[button(100)]"
         let descVertical = "V:[label(20)]-40-[button(17)]"
 
         let titleHConstraints = NSLayoutConstraint.constraints(withVisualFormat: descTitleH, options: [], metrics: nil, views: views)

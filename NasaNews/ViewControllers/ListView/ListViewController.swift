@@ -32,6 +32,7 @@ class ListViewController: BaseViewController<ListViewControllerVM> {
     override func setupViews() {
         super.setupViews()
 
+        title = "List"
         view.backgroundColor = .white
 
         view.addSubview(collectionView)
@@ -55,7 +56,10 @@ extension ListViewController: UICollectionViewDataSource {
 
 extension ListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
+        guard let detailVC = viewModel.getDetailVC(at: indexPath) else {
+            return
+        }
+        self.navigationController?.pushViewController(detailVC, animated: true)
     }
 }
 
